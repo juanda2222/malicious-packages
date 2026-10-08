@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.7.4",
+  "id": "MAL-2026-17650",
+  "published": "2026-10-08T02:54:39Z",
+  "modified": "2026-10-08T04:35:58.761679921Z",
+  "aliases": [
+    "GHSA-rqxj-g25x-4v9v"
+  ],
+  "summary": "Malicious code in tensorlake (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (de1a505f248f0041777b65937111dd0448f6a5e84fa4e3b95a0a00cb21b7589c)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n",
+  "affected": [
+    {
+      "package": {
+        "name": "tensorlake",
+        "ecosystem": "npm"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "0.5.144"
+      ],
+      "database_specific": {
+        "cwes": [
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          },
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-rqxj-g25x-4v9v"
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "id": "GHSA-rqxj-g25x-4v9v",
+        "import_time": "2026-10-08T03:35:05.490606121Z",
+        "modified_time": "2026-10-08T02:54:40Z",
+        "sha256": "de1a505f248f0041777b65937111dd0448f6a5e84fa4e3b95a0a00cb21b7589c",
+        "source": "ghsa-malware",
+        "versions": [
+          "0.5.144"
+        ]
+      },
+      {
+        "id": "GHSA-rqxj-g25x-4v9v",
+        "import_time": "2026-10-08T04:33:59.551168327Z",
+        "modified_time": "2026-10-08T04:15:18Z",
+        "ranges": [
+          {
+            "events": [
+              {
+                "introduced": "0"
+              }
+            ],
+            "type": "SEMVER"
+          }
+        ],
+        "sha256": "ee81e66c5969ba443fdfe172ed48e09d5e4a0c705bdb6c916298d1244b12c2d2",
+        "source": "ghsa-malware",
+        "versions": [
+          "0.5.144"
+        ]
+      }
+    ]
+  }
+}
